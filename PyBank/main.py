@@ -3,7 +3,7 @@ import csv
 profit=[]
 month=[]
 
-with open('budget_data.csv','r') as file:
+with open('budget_data.csv',newline='') as file:
         reader=csv.reader(file)
         next(reader)#skip heading
         for row in reader:
