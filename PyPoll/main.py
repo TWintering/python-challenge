@@ -33,8 +33,8 @@ with open('poll_output.txt','w') as txt:
         if num > win_votes:
             winner=candidates[i]
             win_votes=num
-        print('%10s: %.3f%%   (%d)' % (name,percent,num))
-        txt.write('%s: %.3f%%  (%d)\n' % (name,percent,num))
+        print('%10s: %10.3f%%   (%d)' % (name,percent,num))
+        txt.write('%10s: %10.3f%%  (%d)\n' % (name,percent,num))
     print('-------------------------')
     txt.write('-------------------------\n')
     print('Winner: %s' % (winner))
